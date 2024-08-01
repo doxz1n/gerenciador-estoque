@@ -5,5 +5,5 @@ create table tbProdutos(
     nome varchar(100),
     descricao varchar(1000),
     quantidade int,
-    PRIMARY KEY (`idContato`)
+    PRIMARY KEY (`id`)
 );
