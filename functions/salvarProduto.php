@@ -6,11 +6,13 @@ $nome = $_POST['txProduto'];
 $descricao = $_POST['txDescricao'];
 $quantidade = $_POST['txQuantidade'];
 
-$stmt = $conn-> prepare("insert into tbProduto values(
+
+echo ($nome . $descricao . $quantidade);
+$stmt = $conn-> prepare("insert into tbProdutos values(
                              null,
                              '$nome',
                              '$descricao',
-                             $quantidade,
+                             $quantidade
 )");
 
 $stmt->execute();
