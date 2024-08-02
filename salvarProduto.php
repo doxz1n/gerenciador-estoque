@@ -1,5 +1,5 @@
 <?php
-include "connector.php";
+include "functions/connector.php";
 $conn = connector();
 
 $nome = $_POST['txProduto'];
@@ -18,4 +18,5 @@ $stmt = $conn-> prepare("insert into tbProdutos values(
 $stmt->execute();
 echo "<script>";
 echo "alert('Produto cadastrado com sucesso');";
+echo "window.location.href = 'index.php';";
 echo "</script>";

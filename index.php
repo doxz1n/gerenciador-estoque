@@ -7,6 +7,7 @@
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+<?php include("header.php") ?>
 <h1 class="text-center my-4">Painel Informativo</h1>
 <section><table class='table table-striped'>
     <thead>
@@ -29,9 +30,9 @@
         echo("<th scope = row> $row[id]  </th>");
         echo("<td>  $row[nome]  </td>");
         echo("<td>  $row[descricao]  </td>");
-        echo("<td>  $row[descricao] </td>");
-        echo("<td> <a href='updateproduto.php?id=$row[id]' class='btn btn-primary'> Editar </a> </td> ");
-        echo("<td> <a href='deletarproduto.php?id=$row[id]' class='btn btn-danger'> Excluir </a> </td> ");
+        echo("<td>  $row[quantidade] </td>");
+        echo("<td> <a href='editarproduto.php?id=$row[id]' class='btn btn-primary'> Editar </a> </td> ");
+        echo("<td> <a href='deleteproduct.php?id=$row[id]' class='btn btn-danger'> Excluir </a> </td> ");
         echo "</tr>";
     }
     echo "</table></section>";

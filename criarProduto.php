@@ -7,8 +7,9 @@
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+<?php include("header.php") ?>
 <section>
-    <form action="functions/salvarProduto.php" method="post">
+    <form action="salvarProduto.php" method="post">
         <div class="form-group">
             <div>
                 <label for="txProduto"> Nome </label>
