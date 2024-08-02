@@ -2,7 +2,7 @@
     include "functions/connector.php";
     $id = $_GET['id'];
     $conn = connector();
-    $stmt = $conn->prepare("Delete from tbProdutos where idProduto = '$id'");
+    $stmt = $conn->prepare("Delete from tbProdutos where idProdutos = '$id'");
     $stmt -> execute();
 
     echo "<script>";
