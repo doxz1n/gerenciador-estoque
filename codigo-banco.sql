@@ -1,5 +1,7 @@
 create database Estoque;
+
 use Estoque;
+
 create table tbProdutos(
     id int NOT NULL AUTO_INCREMENT,
     nome varchar(100),

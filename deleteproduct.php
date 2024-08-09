@@ -7,6 +7,6 @@
 
     echo "<script>";
     echo "alert('Produto excluido com sucesso');";
-echo "window.location.href = 'index.php';";
+    echo "window.location.href = 'index.php';";
     echo "</script>";
     ;
